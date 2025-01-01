@@ -38,7 +38,7 @@ function nodeToMarkdown(node: Node): string {
     return node.url;
   }
   if (node.type === 'hashTag') {
-    return `[${node.raw}](${node.href})`;
+    return `(${node.raw})`;
   }
   if (node.type === 'helpfeel') {
     return `\`? ${node.text}\``;
